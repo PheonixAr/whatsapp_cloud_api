@@ -19,7 +19,7 @@ use App\Http\Controllers\WhatsAppController;
 |
 */
 
-Route::get('/index', [WhatsAppController::class, 'index']);
+Route::get('/', [WhatsAppController::class, 'index']);
 Route::post('whatsapp', [WhatsAppController::class, 'store']);
 Route::get('/webhook', [WhatsAppController::class, 'webhook']);
 Route::get('response', [WhatsAppController::class, 'response']);
